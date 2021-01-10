@@ -2,6 +2,12 @@ public class student extends User{
     private String name;
     private String phone;
 
+    public student(String name, String phone) {
+        super("123456");
+        this.name = name;
+        this.phone = phone;
+    }
+
     public String getName() {
         return name;
     }
@@ -16,5 +22,13 @@ public class student extends User{
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    @Override
+    public String toString() {
+        return "student{" +
+                "name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 }

@@ -2,6 +2,10 @@ public class User {
     private int id;
     private String passwrod;
 
+    public User(String passwrod) {
+        this.passwrod = passwrod;
+    }
+
     public int getId() {
         return id;
     }
@@ -14,7 +18,4 @@ public class User {
         return passwrod;
     }
 
-    public void setPasswrod(String passwrod) {
-        this.passwrod = passwrod;
-    }
 }
